@@ -24,7 +24,7 @@ public class LineChartController implements Runnable{
 	@Override
 	public void run() {
 
-		System.out.println("Teste run");
+//		System.out.println("Teste run");
 		
 		serie01 = new XYChart.Series<>();
 		serie02 = new XYChart.Series<>();
