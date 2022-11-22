@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class Load implements Initializable{	
 	private Timeline timeline;
@@ -33,9 +34,9 @@ public class Load implements Initializable{
 	}
 
 	private void beginTimer() {		
-		timeline = new Timeline(new KeyFrame(javafx.util.Duration.seconds(3), ev -> {			
+		timeline = new Timeline(new KeyFrame(Duration.seconds(MonoxidoApplication.StartSeconds), ev -> {			
 				Pane pane = (Pane) NewView.loadFXML("mainView", controller, application);
-				NewView.getNewView(MonoxidoApplication.nameApplication , new Scene(pane), false, stage, application);
+				NewView.getNewView(MonoxidoApplication.NameApplication , new Scene(pane), false, stage, application);
 				stagePrincipal.close();
 				timeline.stop();
 		}));

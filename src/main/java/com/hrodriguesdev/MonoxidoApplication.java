@@ -17,8 +17,15 @@ public class MonoxidoApplication extends Application{
 	private final String nameIcon = "Yggdrasilicon.jpg";
 	private final String nameImageViewStarting = "Yggdrasil.jpg";
 	
-	public static String nameApplication = "Monitoramento de Monoxido";
+//	Nomes usado no decorrer da application
+	public static String NameApplication = "Monitoramento de Monoxido";	
+	public static String Serie01 = "Plataforma";
+	public static String Serie02 = "Topo";
+	public static String Serie03 = "Glendons";
 	
+//	Tempo inicial para carregar o Aplicativo
+	public static Double StartSeconds = 1d;
+		
 //	Carregando a view de LoadO
 	@Override
 	public void start(Stage primaryStage) throws Exception {
